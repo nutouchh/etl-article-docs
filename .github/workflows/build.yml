@@ -29,8 +29,8 @@ jobs:
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ttf-mscorefonts-installer
           sudo fc-cache -f
           # Fail the build rather than silently substituting a different font.
-          fc-list -f '%{family}\\n' | grep -Fxi 'Times New Roman'
-          fc-list -f '%{family}\\n' | grep -Fxi 'Arial'
+          fc-list -f '%{family}\n' | grep -Fxi 'Times New Roman'
+          fc-list -f '%{family}\n' | grep -Fxi 'Arial'
 
       - name: Build and verify PDF
         run: make check
