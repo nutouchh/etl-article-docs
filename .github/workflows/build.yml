@@ -20,6 +20,18 @@ jobs:
             texlive-latex-extra texlive-fonts-recommended \
             fonts-dejavu-core poppler-utils
 
+      - name: Install Microsoft Core Fonts
+        run: |
+          # The ttf-mscorefonts-installer EULA must be accepted for unattended installs.
+          sudo add-apt-repository -y multiverse
+          sudo apt-get update
+          echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ttf-mscorefonts-installer
+          sudo fc-cache -f
+          # Fail the build rather than silently substituting a different font.
+          fc-list -f '%{family}\n' | grep -Fxi 'Times New Roman'
+          fc-list -f '%{family}\n' | grep -Fxi 'Arial'
+
       - name: Build and verify PDF
         run: make check
 
