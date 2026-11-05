@@ -1,0 +1,47 @@
+УДК 004.4
+
+**Часовских А.А.**  
+тьютор кафедры ИиППО  
+ФГБОУ ВО «МИРЭА − Российский технологический университет»  
+г. Москва, РФ
+
+Научный руководитель:  Лобанов А.А.  
+доцент кафедры ИиППО, к.т.н., доцент  
+ФГБОУ ВО «МИРЭА − Российский технологический университет»  
+г. Москва, РФ
+
+\begin{center}
+\textbf{ETL–СИСТЕМА ДЛЯ КОНСОЛИДАЦИИ ДАННЫХ С ДИНАМИЧЕСКИМ ВЫБОРОМ АЛГОРИТМА ОБРАБОТКИ}
+\end{center}
+
+**Аннотация**
+
+В работе предложена архитектура информационной системы, предназначенной для автоматической консолидации табличных данных, не имеющих единой формы. Решение предложенное в работе может быть использовано для оперативного сбора и анализа, например, данных продаж, в разном формате отчетов партнеров. Разработанная архитектура веб–приложения с клиент–серверной структурой, поддерживает ETL–пайплайн для загрузки, обработки и хранения данных. Ключевая особенность разработки − гибкая адаптация под структуру входных данных. Предложенная схема может быть использована как готовое решение в различных сферах автоматизации сбора и обработки данных.
+
+**Ключевые слова:** ETL, консолидация данных, динамический выбор алгоритма, обработка данных, унификация данных, автоматизация отчетности.
+
+---
+
+**Chasovskih A.A.**  
+Tutor of the IiPPO department  
+MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY  
+Moscow, Russia
+
+Scientific supervisor: Lobanov A.A.  
+Associate Professor of the IiPPO department, Ph.D.  
+MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY  
+Moscow, Russia
+
+\begin{center}
+\textbf{ETL SYSTEM FOR DATA CONSOLIDATION WITH DYNAMIC PROCESSING ALGORITHM SELECTION}
+\end{center}
+
+**Abstract**
+
+This paper proposes an architecture for an information system designed for the automatic consolidation of tabular data lacking a unified format. The proposed solution can be applied to the real-time collection and analysis of, for instance, sales data provided in various report formats by different partners. The developed architecture of the web application, based on a client-server model, supports an ETL pipeline for data loading, processing, and storage. A key feature of the system is its flexible adaptation to the structure of incoming data. The proposed framework can be used as a ready-to-deploy solution in various domains requiring automated data collection and processing.
+
+**Keywords:** ETL, data consolidation, dynamic algorithm selection, data processing, data unification, reporting automation.
+
+\clearpage
+\tableofcontents
+\clearpage
