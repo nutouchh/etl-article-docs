@@ -1,0 +1,21 @@
+% PDF styling only. Article content lives in docs/*.md.
+% XeLaTeX loads fontspec through Pandoc's standard template.
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{xurl}
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{ruemdash}{\space---\space}
+\captionsetup{labelsep=ruemdash, font=small}
+\captionsetup[figure]{name=Рисунок, justification=centering}
+\captionsetup[table]{name=Таблица, justification=raggedright, singlelinecheck=false}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\emergencystretch}{2em}
