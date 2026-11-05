@@ -6,7 +6,10 @@ from pathlib import Path
 
 pdf = Path(sys.argv[1] if len(sys.argv) > 1 else 'build/article.pdf')
 assert pdf.is_file() and pdf.stat().st_size > 1000, f'PDF not found: {pdf}'
-text = subprocess.check_output(['pdftotext', str(pdf), '-'], text=True)
+text = subprocess.check_output(
+    ['pdftotext', '-enc', 'UTF-8', str(pdf), '-'],
+    encoding='utf-8'
+)
 normalized = re.sub(r'\s+', ' ', text).casefold()
 for required in (
     'содержание', 'архитектура системы',
