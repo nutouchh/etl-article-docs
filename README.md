@@ -44,6 +44,38 @@ etl-article-docs/
     └── preamble.tex             # шрифты и оформление подписей
 ```
 
+## Сборка на Windows (PowerShell)
+
+```
+New-Item -ItemType Directory -Force build | Out-Null
+
+pandoc `
+  docs/00-frontmatter.md `
+  docs/01-introduction.md `
+  docs/02-architecture.md `
+  docs/03-transformer.md `
+  docs/04-algorithm.md `
+  docs/05-conclusion.md `
+  docs/06-references.md `
+  docs/07-formula-appendix.md `
+  --from=markdown+raw_tex `
+  --standalone `
+  --metadata=lang:ru-RU `
+  --variable=documentclass:extarticle `
+  --variable=fontsize:14pt `
+  --metadata=geometry:margin=2.2cm `
+  --pdf-engine=xelatex `
+  --include-in-header=tex/preamble.tex `
+  --lua-filter=filters/table_labels.lua `
+  --resource-path=. `
+  --output=build/article.pdf
+
+```
+проверка: python scripts/check_pdf.py build/article.pdf
+
+Откройте `build/article.pdf` в программе просмотра PDF. Не нужно вручную
+открывать/сохранять исходник Word: преобразование выполняется из Markdown.
+
 ## Сборка на Ubuntu (включая локальную Ubuntu-консоль)
 
 Требуются `make`, `pandoc`, `xelatex`, шрифты DejaVu и `pdftotext`.
