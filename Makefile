@@ -26,13 +26,13 @@ $(OUTPUT): $(SOURCES) $(OTHER_INPUTS) Makefile
 	  --standalone \
 	  --metadata=lang:ru-RU \
 	  --metadata=geometry:margin=2.2cm \
+	  --variable=documentclass:extarticle \
+	  --variable=fontsize:14pt \
 	  --pdf-engine=$(PDF_ENGINE) \
 	  --include-in-header=tex/preamble.tex \
 	  --lua-filter=filters/table_labels.lua \
 	  --resource-path=. \
 	  --output=$(OUTPUT)
-	  --variable=documentclass:extarticle \
-	  --variable=fontsize:14pt \
 
 check: pdf
 	python3 scripts/check_pdf.py $(OUTPUT)
