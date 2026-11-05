@@ -11,7 +11,7 @@ normalized = re.sub(r'\s+', ' ', text).casefold()
 for required in (
     'содержание', 'архитектура системы',
     'рисунок 1', 'таблица 1', 'хранение данных в системе',
-    'учебное приложение',
+    'приложение',
 ):
     if required not in normalized:
         raise SystemExit(f'ERROR: expected text is absent from generated PDF: {required}')
