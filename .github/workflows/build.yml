@@ -1,0 +1,31 @@
+name: Build article PDF
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            make pandoc texlive-xetex texlive-lang-cyrillic \
+            texlive-latex-extra texlive-fonts-recommended \
+            fonts-dejavu-core poppler-utils
+
+      - name: Build and verify PDF
+        run: make check
+
+      - name: Upload PDF for download
+        uses: actions/upload-artifact@v4
+        with:
+          name: etl-article-pdf
+          path: build/article.pdf
+          if-no-files-found: error
