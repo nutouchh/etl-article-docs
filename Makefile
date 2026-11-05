@@ -31,6 +31,8 @@ $(OUTPUT): $(SOURCES) $(OTHER_INPUTS) Makefile
 	  --lua-filter=filters/table_labels.lua \
 	  --resource-path=. \
 	  --output=$(OUTPUT)
+	  --variable=documentclass:extarticle \
+	  --variable=fontsize:14pt \
 
 check: pdf
 	python3 scripts/check_pdf.py $(OUTPUT)

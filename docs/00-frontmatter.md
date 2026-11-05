@@ -1,11 +1,11 @@
-УДК 004.4
+\noindent УДК 004.4
 
-**Часовских А.А.**  
+\noindent **Часовских А.А.**  
 тьютор кафедры ИиППО  
 ФГБОУ ВО «МИРЭА − Российский технологический университет»  
 г. Москва, РФ
 
-Научный руководитель:  Лобанов А.А.  
+\noindent **Научный руководитель:  Лобанов А.А.**  
 доцент кафедры ИиППО, к.т.н., доцент  
 ФГБОУ ВО «МИРЭА − Российский технологический университет»  
 г. Москва, РФ
@@ -22,12 +22,12 @@
 
 ---
 
-**Chasovskih A.A.**  
+\noindent **Chasovskih A.A.**  
 Tutor of the IiPPO department  
 MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY  
 Moscow, Russia
 
-Scientific supervisor: Lobanov A.A.  
+\noindent **Scientific supervisor: Lobanov A.A.** 
 Associate Professor of the IiPPO department, Ph.D.  
 MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY  
 Moscow, Russia
