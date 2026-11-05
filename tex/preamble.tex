@@ -17,5 +17,27 @@
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
 \usepackage{setspace}
-\setstretch{1.15}
+\onehalfspacing
 \setlength{\emergencystretch}{2em}
+
+\usepackage{titlesec}
+
+% Заголовки первого уровня (#)
+\titlespacing*{\section}
+  {1.25cm}     % Отступ слева
+  {18pt}    % Отступ сверху
+  {12pt}    % Отступ снизу
+
+% Заголовки второго уровня (##)
+\titlespacing*{\subsection}
+  {1.25cm}     % Отступ слева
+  {12pt}    % Отступ сверху
+  {6pt}     % Отступ снизу
+  \titlespacing*{\section}
+  {1.25cm}
+  {18pt}
+  {12pt}
+
+  % Отключение автоматических переносов слов
+\usepackage[none]{hyphenat}
+\emergencystretch=7em

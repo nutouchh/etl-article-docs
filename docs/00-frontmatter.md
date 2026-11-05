@@ -1,18 +1,23 @@
-\noindent УДК 004.4
 
-\noindent **Часовских А.А.**  
-тьютор кафедры ИиППО  
-ФГБОУ ВО «МИРЭА − Российский технологический университет»  
+\begin{flushleft}
+\begin{tabular}{@{}l@{}}
+УДК 004.4 \\[14pt]
+\textbf{Часовских А.А.} \\
+тьютор кафедры ИиППО \\
+ФГБОУ ВО «МИРЭА – Российский технологический университет» \\
+г. Москва, РФ \\[14pt]
+\textbf{Научный руководитель: Лобанов А.А.} \\
+доцент кафедры ИиППО, к.т.н., доцент \\
+ФГБОУ ВО «МИРЭА – Российский технологический университет» \\
 г. Москва, РФ
+\end{tabular}
+\end{flushleft}
 
-\noindent **Научный руководитель:  Лобанов А.А.**  
-доцент кафедры ИиППО, к.т.н., доцент  
-ФГБОУ ВО «МИРЭА − Российский технологический университет»  
-г. Москва, РФ
-
+\vspace{14pt}
 \begin{center}
 \textbf{ETL–СИСТЕМА ДЛЯ КОНСОЛИДАЦИИ ДАННЫХ С ДИНАМИЧЕСКИМ ВЫБОРОМ АЛГОРИТМА ОБРАБОТКИ}
 \end{center}
+\vspace{14pt}
 
 **Аннотация**
 
@@ -20,21 +25,24 @@
 
 **Ключевые слова:** ETL, консолидация данных, динамический выбор алгоритма, обработка данных, унификация данных, автоматизация отчетности.
 
----
 
-\noindent **Chasovskih A.A.**  
-Tutor of the IiPPO department  
-MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY  
+\begin{flushleft}
+\begin{tabular}{@{}l@{}}
+\textbf{Chasovskih A.A.} \\
+Tutor of the IiPPO department \\
+MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY \\
+Moscow, Russia \\[14pt]
+\textbf{Scientific supervisor: Lobanov A.A.} \\
+Associate Professor of the IiPPO department, Ph.D. \\
+MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY \\
 Moscow, Russia
-
-\noindent **Scientific supervisor: Lobanov A.A.** 
-Associate Professor of the IiPPO department, Ph.D.  
-MIREA — RUSSIAN TECHNOLOGICAL UNIVERSITY  
-Moscow, Russia
-
+\end{tabular}
+\end{flushleft}
+\vspace{14pt}
 \begin{center}
 \textbf{ETL SYSTEM FOR DATA CONSOLIDATION WITH DYNAMIC PROCESSING ALGORITHM SELECTION}
 \end{center}
+\vspace{14pt}
 
 **Abstract**
 
