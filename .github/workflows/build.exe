@@ -1,0 +1,28 @@
+New-Item -ItemType Directory -Force build | Out-Null
+
+pandoc `
+  docs/00-frontmatter.md `
+  docs/01-introduction.md `
+  docs/02-architecture.md `
+  docs/03-transformer.md `
+  docs/04-algorithm.md `
+  docs/05-conclusion.md `
+  docs/06-references.md `
+  docs/07-formula-appendix.md `
+  --from=markdown+raw_tex `
+  --standalone `
+  --metadata=lang:ru-RU `
+  --variable=documentclass:extarticle `
+  --variable=fontsize:14pt `
+  --citeproc `
+  --bibliography=bib.bib `
+  --csl=gost-r-7.0.100-2018.csl `
+  --metadata=geometry:margin=2.2cm `
+  --pdf-engine=xelatex `
+  --include-in-header=tex/preamble.tex `
+  --lua-filter=filters/table_labels.lua `
+  --resource-path=. `
+  --output=build/article.pdf
+
+```
+python scripts/check_pdf.py build/article.pdf

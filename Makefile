@@ -28,6 +28,9 @@ $(OUTPUT): $(SOURCES) $(OTHER_INPUTS) Makefile
 	  --metadata=geometry:margin=2.2cm \
 	  --variable=documentclass:extarticle \
 	  --variable=fontsize:14pt \
+	  --citeproc \
+	  --bibliography=bib.bib \
+	  --csl=gost-r-7.0.100-2018.csl \
 	  --pdf-engine=$(PDF_ENGINE) \
 	  --include-in-header=tex/preamble.tex \
 	  --lua-filter=filters/table_labels.lua \
